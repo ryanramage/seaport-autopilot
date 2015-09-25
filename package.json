@@ -1,0 +1,39 @@
+{
+  "name": "seaport-autopilot",
+  "version": "1.0.0",
+  "description": "Takes care of the work getting an available port, finding a seaport and staying connected.",
+  "author": {
+    "name": "Ryan Ramage",
+    "email": "ryan.ramage@gmail.com",
+    "url": "http://github.com/ryanramage"
+  },
+  "keywords": [
+    "seaport",
+    "mdns",
+    "automatic"
+  ],
+  "main": "./lib/index.js",
+  "dependencies": {
+    "get-port": "^1.0.0",
+    "seaport": "^2.0.9",
+    "seaport-advert": "^1.2.4"
+  },
+  "devDependencies": {
+    "standard": "^4.5.4",
+    "tap": "^0.4.12",
+    "tape": "^2.14.0",
+    "kwalitee": "^1.0.0"
+  },
+  "scripts": {
+    "test": "standard && kwalitee . && ./node_modules/.bin/tap test/*.js"
+  },
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanramage/seaport-autopilot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanramage/seaport-autopilot/issues"
+  },
+  "homepage": "https://github.com/ryanramage/seaport-autopilot"
+}
