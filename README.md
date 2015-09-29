@@ -17,7 +17,7 @@ npm install seaport-autopilot
 
     var seaportautopilot = require('seaport-autopilot')
 
-    seaportautopilot('myservicename', function (err, port) {
+    seaportautopilot('myservicename', function (err, port, path) {
       if (err) return console.log('something serious happened, die with', err)
 
       // here you have a shiny new port, and will be available on an auto-connected seaport      
